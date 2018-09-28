@@ -1,4 +1,6 @@
-function detectswipe(el,func) {
+var arr = [];
+
+function detectswipe(el) {
   swipe_det = new Object();
   swipe_det.sX = 0;
   swipe_det.sY = 0;
@@ -34,14 +36,10 @@ function detectswipe(el,func) {
     }
 
     if (direc != "") {
-      if(typeof func == 'function') func(el,direc);
+      changeStyle(direc);
     }
     direc = "";
   },false);  
-}
-
-function myfunction(el,d) {
-  alert("you swiped on element with id '"+el+"' to "+d+" direction");
 }
 
 if(document.readyState === 'loading') {
@@ -52,5 +50,24 @@ if(document.readyState === 'loading') {
 }
 
 function afterLoaded(){
-  detectswipe("content", myfunction);
+  setupMenu();
+  detectswipe("content");
+}
+
+function setupMenu(){  
+  var doc = document.getElementsByClassName("dots");
+
+    for(var i = 0; i < doc.length; i++){
+      for(var j = 0; j < doc[i].childNodes.length; j++){
+        if(doc[i].childNodes[j].className == "cir"){
+          arr.push(doc[i].childNodes[j]);
+        }
+      } 
+    }
+}
+
+function changeStyle(dir){
+  var mutableArr = [arr.length];
+  mutableArr[0].style.backgoundColor = "red";
+
 }
