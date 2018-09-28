@@ -43,8 +43,8 @@ body{
 
 #textTitle{
     position: absolute;
-    left: 40%;
-    margin-top: 70px;
+    left: 35%;
+    margin-top: 150px;
 }
 /*----------------------*/
 @media (min-width: 0px) {
@@ -66,11 +66,11 @@ body{
         width: 350px;
         height: 200px;
         left: 0%;
-        top: 60%;
+        top: 70%;
     }
     .descriptions{
         position: absolute;
-        top: 110%;
+        top: 120%;
         left: 8%; 
     }
     #project1{
@@ -78,7 +78,7 @@ body{
     }
     #tools{
         display: inline;
-        top: 140%;
+        top: 150%;
         left: 20%;
     }
     .logos{
@@ -178,11 +178,11 @@ body{
         width: 350px;
         height: 200px;
         left: 8%;
-        top: 50%;
+        top: 60%;
     }
     .descriptions{
         position: absolute;
-        top: 83%;
+        top: 93%;
         left: 8%; 
     }
     #project1{
@@ -190,7 +190,7 @@ body{
     }
     #tools{
         display: inline;
-        top: 100%;
+        top: 110%;
         left: 20%;
     }
     .logos{
