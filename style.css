@@ -1,0 +1,10 @@
+.cir{
+    
+    background-color: rgb(124,119,124);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.titles{
+    display: none;
+}
