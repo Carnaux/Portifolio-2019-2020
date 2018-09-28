@@ -44,6 +44,13 @@ function myfunction(el,d) {
   alert("you swiped on element with id '"+el+"' to "+d+" direction");
 }
 
+if(document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', afterLoaded);
+} else {
+  //The DOMContentLoaded event has already fired. Just run the code.
+  afterLoaded();
+}
 
-
-detectswipe('swipeme',myfunction);
+function afterLoaded(){
+  detectswipe("swipeme", myfunction);
+}
