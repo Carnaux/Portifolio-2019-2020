@@ -52,5 +52,5 @@ if(document.readyState === 'loading') {
 }
 
 function afterLoaded(){
-  detectswipe("swipeme", myfunction);
+  detectswipe("content", myfunction);
 }
