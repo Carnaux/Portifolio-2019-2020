@@ -184,5 +184,5 @@ if(document.readyState === 'loading') {
 }
 
 function afterLoaded(){
-  detectswipe("content");
+  detectswipe("menu");
 }
