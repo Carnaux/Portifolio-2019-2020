@@ -1,4 +1,49 @@
+function Hover(b, n){
+    if(n == 1){
+        if(b == "true"){  
+            project1.style.display = "block";
+            c1.style.backgroundColor = 'rgb(161,157,161)';
+        }else{  
+            project1.style.display = "none";
+            c1.style.backgroundColor = 'rgb(124,119,124)';
+        }
+    }else if(n == 2){
+        if(b == "true"){  
+            project2.style.display = "block";
+            c2.style.backgroundColor = 'rgb(161,157,161)';
+        }else{  
+            project2.style.display = "none";
+            c2.style.backgroundColor = 'rgb(124,119,124)';
+        }
+    }else if(n == 3){
+        if(b == "true"){  
+            project3.style.display = "block";
+            c3.style.backgroundColor = 'rgb(161,157,161)';
+        }else{  
+            project3.style.display = "none";
+            c3.style.backgroundColor = 'rgb(124,119,124)';
+        }
+    }else if(n == 4){
+        if(b == "true"){  
+            project4.style.display = "block";
+            c4.style.backgroundColor = 'rgb(161,157,161)';
+        }else{  
+            project4.style.display = "none";
+            c4.style.backgroundColor = 'rgb(124,119,124)';
+        }
+    }else if(n == 5){
+        if(b == "true"){  
+            project5.style.display = "block";
+            c5.style.backgroundColor = 'rgb(161,157,161)';
+        }else{  
+            project5.style.display = "none";
+            c5.style.backgroundColor = 'rgb(124,119,124)';
+        }
+    }
+}
 var arr = [];
+var cont = 1;
+
 
 function detectswipe(el) {
   swipe_det = new Object();
@@ -36,7 +81,96 @@ function detectswipe(el) {
     }
 
     if (direc != "") {
-      changeStyle(direc);
+      if(direc == "r"){
+        
+
+        if(cont == 5){
+            cont = 1;
+        }else{
+            cont++;
+        }
+        var id = "titlePj" + cont;
+        console.log(id, document.getElementById(id).textContent);
+
+        document.getElementById("textTitle").textContent = document.getElementById(id).textContent;
+        document.getElementById("textTitle").href = document.getElementById(id).href;
+        
+        if(cont == 1){
+            Hover("false", 5);
+        }else{
+            Hover("false", cont-1);
+        }
+        Hover("true", cont);
+
+        c1.style.animationDirection = "reverse";
+        c2.style.animationDirection = "reverse";
+        c3.style.animationDirection = "reverse";
+        c4.style.animationDirection = "reverse";
+        c5.style.animationDirection = "reverse";
+
+        c1.style.animationPlayState="running";
+        c2.style.animationPlayState="running";
+        c3.style.animationPlayState="running";
+        c4.style.animationPlayState="running";
+        c5.style.animationPlayState="running";
+        
+
+        setTimeout(function() {
+        c1.style.animation = 'none';
+        c2.style.animation = 'none';
+        c3.style.animation = 'none';
+        c4.style.animation = 'none';
+        c5.style.animation = 'none';
+        setTimeout(function() {
+          c1.style.animation = '';
+          c2.style.animation = '';
+          c3.style.animation = '';
+          c4.style.animation = '';
+          c5.style.animation = '';
+        }, 10);},400);
+      }else{
+
+        if(cont == 1){
+            cont = 5;
+        }else{
+            cont--;
+        }
+        var id = "titlePj" + cont;
+        console.log(id, document.getElementById(id).textContent);
+
+        document.getElementById("textTitle").textContent = document.getElementById(id).textContent;
+        document.getElementById("textTitle").href = document.getElementById(id).href;
+        
+        if(cont == 5){
+            Hover("false", 1);
+        }else{
+            Hover("false", cont+1);
+        }
+        Hover("true", cont);
+
+        c1.style.animationPlayState="running";
+        c2.style.animationPlayState="running";
+        c3.style.animationPlayState="running";
+        c4.style.animationPlayState="running";
+        c5.style.animationPlayState="running";
+        
+
+        setTimeout(function() {
+        c1.style.animation = 'none';
+        c2.style.animation = 'none';
+        c3.style.animation = 'none';
+        c4.style.animation = 'none';
+        c5.style.animation = 'none';
+        setTimeout(function() {
+          c1.style.animation = '';
+          c2.style.animation = '';
+          c3.style.animation = '';
+          c4.style.animation = '';
+          c5.style.animation = '';
+        }, 10);},400);
+       
+      }
+      
     }
     direc = "";
   },false);  
@@ -50,24 +184,5 @@ if(document.readyState === 'loading') {
 }
 
 function afterLoaded(){
-  setupMenu();
   detectswipe("content");
-}
-
-function setupMenu(){  
-  var doc = document.getElementsByClassName("dots");
-
-    for(var i = 0; i < doc.length; i++){
-      for(var j = 0; j < doc[i].childNodes.length; j++){
-        if(doc[i].childNodes[j].className == "cir"){
-          arr.push(doc[i].childNodes[j]);
-        }
-      } 
-    }
-}
-
-function changeStyle(dir){
-  var mutableArr = [arr.length];
-  mutableArr[0].style.backgoundColor = "red";
-
 }

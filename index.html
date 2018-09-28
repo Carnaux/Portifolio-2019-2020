@@ -13,41 +13,99 @@
   <script src="j1.js"></script>
 
 </head>
-
 <body>
 
+<div id="header" class="container">
+    <div class="row" >
+        <div class="col logoclass">
+            <img id="logo" alt="logo.png" src="logo.png"> 
+        </div>
+        <div class="col-sm-1 headerclass">
+                <a id="git" href="https://github.com/Carnaux"><i class="fab fa-github"></i></a>
+            </div>
+        <div class="col headerclass">
+            <p id="txtMenu">About Me</p>
+        </div>
+    </div>
+        
+</div>
 
 <div id="content" class="container" >
-  <div class="row">
-        <div class="col">
-                <div id="circles" class="row">
+  <div class="row justify-content-center">
+        <div class="col ">
+                <div class="row ">
                         <div class="dots">
-                            <div id="c1" onmouseover="Hover('true', '1')" onmouseout="Hover('false', '1')" class="cir"></div>
-                            <a href="https://github.com/Carnaux/RenovableEnergyHouse-Three.js" id="titlePj1" class="titles">Renovable Energy House</a>
-                        </div>
-                        <div class="dots">
-                            <div id="c2" onmouseover="Hover('true', '2')" onmouseout="Hover('false', '2')" class="cir"></div>
-                            <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj2" class="titles">VirtuSurg</a>
+                                <div id="c1" onmouseover="Hover('true', '1')" onmouseout="Hover('false', '1')" class="cir"></div>
+                                <a href="https://github.com/Carnaux/RenovableEnergyHouse-Three.js" id="titlePj1" class="titles">Renovable Energy House</a>
                         </div>
                         <div class="dots">
-                            <div id="c3" onmouseover="Hover('true', '3')" onmouseout="Hover('false', '3')" class="cir"></div>
-                            <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj3" class="titles">Project Motus</a>
+                                <div id="c2" onmouseover="Hover('true', '2')" onmouseout="Hover('false', '2')" class="cir"></div>
+                                <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj2" class="titles">VirtuSurg</a>
                         </div>
-                        <div class=" dots">
-                            <div id="c4" onmouseover="Hover('true', '4')" onmouseout="Hover('false', '4')" class="cir"></div>
-                            <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj4" class="titles">Raffe Hackathon</a>
+                        <div class="dots">
+                                <div id="c3" onmouseover="Hover('true', '3')" onmouseout="Hover('false', '3')" class="cir"></div>
+                                <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj3" class="titles">Project Motus</a>
                         </div>
-                        <div class=" dots">
+                        <div class="dots">
                                 <div id="c4" onmouseover="Hover('true', '4')" onmouseout="Hover('false', '4')" class="cir"></div>
-                                <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj4" class="titles">Cats</a>
+                                <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj4" class="titles">Raffe Hackathon</a>
                         </div>
+                        <div class="dots">
+                                <div id="c5" onmouseover="Hover('true', '5')" onmouseout="Hover('false', '5')" class="cir"></div>
+                                <a href="https://github.com/Carnaux/VirtuSurg-Three.js" id="titlePj5" class="titles">Cats</a>
+                        </div>
+                        <a href="https://github.com/Carnaux/RenovableEnergyHouse-Three.js" id="textTitle">Renovable Energy House</a>
                 </div>
         </div>
   </div>
- 
+  <div class="row">
+        <div id="project1" class="projects">
+                <img src="casa.png" id="pj1" class="imgs">
+                <p id="descriptionPj1" class="descriptions">A simulation of a solar powered house. This was a project for the class of Enviroment and Urban Development.<br> It allow you to take control of the Sun and other conditions to see how much energy the house can generate.</p>
+                <div id="tools">
+                        <img id="three1" class="logos" src="threelogo.png">
+                </div>
+            </div>
+
+            <div id="project2" class="projects">
+                    <img src="virtusurg.png" id="pj2" class="imgs">
+                    <p id="descriptionPj2" class="descriptions">This is one of the projects that i work at the Laboratório Team, it is a simulation of laparoscopic surgery made in three.js <br>with the ammo.js physics library and, this version, uses the Leap Motion to control the instruments.</p>
+                    <div id="tools">
+                            <img id="three" class="logos" src="threelogo.png">
+                            <img id="leap" class="logos" src="leaplogo.png">
+                    </div>
+            </div>
+            <div id="project3" class="projects">
+                    <img src="prjArtisan.png" id="pj3" class="imgs">
+                    <p id="descriptionPj3" class="descriptions">Project Motus is a editor for simulations in general, aerodynamics, robotics etc.</p>
+                    <div id="tools">
+                            <img id="three" class="logos" src="threelogo.png">
+                            <img id="electron" class="logos" src="electron.png">
+                    </div>
+            </div>
+            <div id="project4" class="projects">
+                    <img src="hack.png" id="pj4" class="imgs">
+                    <p id="descriptionPj4" class="descriptions">The Laboratório Team participated in a Hackathon where we had to surplus the industrial needs of a beer brewery</p>
+                    <div id="tools">
+                            <img id="involt" class="logos" src="involt.png">
+                            <img id="ionic" class="logos" src="ionic.png">
+                            <img id="firebase" class="logos" src="firebase.png">
+                            <img id="arduino" class="logos" src="arduino.png">
+                            <img id="unity" class="logos" src="unity.png">
+                            <img id="vuforia" class="logos" src="vuforia.png">
+                    </div>
+            </div>
+            <div id="project5" class="projects">
+                        <img src="prjArtisan.png" id="pj5" class="imgs">
+                        <p id="descriptionPj5" class="descriptions">Project Motus is a editor for simulations in general, aerodynamics, robotics etc.</p>
+                        <div id="tools">
+                                <img id="ionic1" class="logos" src="ionic.png">
+                                <img id="firebase1" class="logos" src="firebase.png">
+                        </div>
+                </div>
+  </div>
   
 </div>
-
 
 
 </body>
