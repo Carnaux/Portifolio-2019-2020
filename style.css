@@ -57,6 +57,7 @@ body{
     left: 35%;
     margin-top: 150px;
 }
+
 /*----------------------*/
 @media (min-width: 0px) {
     #logo{
@@ -172,6 +173,10 @@ body{
         height: 200px;
         left: 10%;
         top: 90%;
+    }
+   #pj5{
+        width: 250px;
+        height: 250px;
     }
    
 }
