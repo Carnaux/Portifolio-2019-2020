@@ -1,45 +1,77 @@
+var atual = 1;
+
 function Hover(b, n){
     if(n == 1){
+        hideMe();
         if(b == "true"){  
+            atual = 1;
             project1.style.display = "block";
             c1.style.backgroundColor = 'rgb(161,157,161)';
         }else{  
+            atual = 0;
             project1.style.display = "none";
             c1.style.backgroundColor = 'rgb(124,119,124)';
         }
     }else if(n == 2){
-        if(b == "true"){  
+        hideMe();
+        if(b == "true"){
+            atual = 2;  
             project2.style.display = "block";
             c2.style.backgroundColor = 'rgb(161,157,161)';
         }else{  
+            atual = 0;
             project2.style.display = "none";
             c2.style.backgroundColor = 'rgb(124,119,124)';
         }
     }else if(n == 3){
+        hideMe();
         if(b == "true"){  
+             atual = 3;
             project3.style.display = "block";
             c3.style.backgroundColor = 'rgb(161,157,161)';
         }else{  
+            atual = 0;
             project3.style.display = "none";
             c3.style.backgroundColor = 'rgb(124,119,124)';
         }
     }else if(n == 4){
+        hideMe();
         if(b == "true"){  
+            atual = 4;
             project4.style.display = "block";
             c4.style.backgroundColor = 'rgb(161,157,161)';
         }else{  
+            atual = 0;
             project4.style.display = "none";
             c4.style.backgroundColor = 'rgb(124,119,124)';
         }
     }else if(n == 5){
+        hideMe();
         if(b == "true"){  
+            atual = 5;
             project5.style.display = "block";
             c5.style.backgroundColor = 'rgb(161,157,161)';
         }else{  
+            atual = 0;
             project5.style.display = "none";
             c5.style.backgroundColor = 'rgb(124,119,124)';
         }
+    }else if(n == 20){    
+
+        var id1 = document.getElementById("project" + cont);
+        id1.style.display = "none";
+        if(b == "true"){
+            about.style.display = "block";
+            document.getElementById("textTitle").textContent = "";
+        }else{
+            about.style.display = "none";
+        }
+
     }
+}
+
+function hideMe(){
+    about.style.display = "none";
 }
 var arr = [];
 var cont = 1;
@@ -90,7 +122,7 @@ function detectswipe(el) {
             cont++;
         }
         var id = "titlePj" + cont;
-        console.log(id, document.getElementById(id).textContent);
+        
 
         document.getElementById("textTitle").textContent = document.getElementById(id).textContent;
         document.getElementById("textTitle").href = document.getElementById(id).href;
@@ -136,7 +168,7 @@ function detectswipe(el) {
             cont--;
         }
         var id = "titlePj" + cont;
-        console.log(id, document.getElementById(id).textContent);
+        
 
         document.getElementById("textTitle").textContent = document.getElementById(id).textContent;
         document.getElementById("textTitle").href = document.getElementById(id).href;

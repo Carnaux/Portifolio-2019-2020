@@ -25,6 +25,17 @@ body{
     height: 60px;
     border-radius: 50%;
 }
+/*--------------ABOUT------*/
+#about{
+    
+    display: none;
+}
+#myfoto{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
 /*---------Projects-------------*/
 .projects{
     display: none;
@@ -155,7 +166,13 @@ body{
         animation-play-state: paused;
         animation-timing-function: linear;
     }
-    
+    #aboutMe{
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        left: 10%;
+        top: 90%;
+    }
    
 }
 /* XS ( 400px and up) */
@@ -403,6 +420,13 @@ body{
     #firebase1 {
         width: 8%;
         height: 7%;
+    }
+    #aboutMe{
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        left: 43%;
+        top: 65%;
     }
 }
 
