@@ -17,8 +17,12 @@
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -40,172 +44,222 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#" onclick="openHome()"
                 >Home <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="openAbout()">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
+    <!---------------------------------------------------------------------------------------------->
     <div id="home">
-              <!-- Header - set the background image for the header in the line below -->
-              <header
-                class="py-5 bg-image-full"
-                style="background-image: url(imgs/aero.png); height: 400px;"
-              ></header>
-
-              <!-- Content section -->
-              <section class="py-5">
-                <div class="container">
-                  <h1>Web Aerodynamics</h1>
-                  <p class="lead">Easy to use aerodynamics in your browser!</p>
-                  <a href="https://carnaux.github.io/Web-Aerodynamics/"
-                    >https://carnaux.github.io/Web-Aerodynamics/</a
-                  >
-                </div>
-              </section>
-
-              <!-- Image Section - set the background image for the header in the line below -->
-              <section
-                class="py-5 bg-image-full"
-                style="background-image: url(imgs/virtusurg.png);  height: 400px;"
-              >
-                <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-                <div style="height: 200px;"></div>
-              </section>
-
-              <!-- Content section -->
-              <section class="py-5">
-                <div class="container">
-                  <h1>VirtuSurg</h1>
-                  <p class="lead">
-                    Laparoscopic surgery simulator using Three.js and the LeapMotion.
-                  </p>
-                  <a href="https://github.com/Carnaux/VirtuSurg-Three.js">https://github.com/Carnaux/VirtuSurg-Three.js</a>
-                </div>
-              </section>
-
-              <!-- Image Section - set the background image for the header in the line below -->
-              <section
-              class="py-5 bg-image-full"
-              style="background-image: url(imgs/robotics.png);  height: 400px;"
-            >
-              <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-              <div style="height: 200px;"></div>
-            </section>
-
-            <!-- Content section -->
-            <section class="py-5">
-              <div class="container">
-                <h1>Web Platform For Robotics</h1>
-                <p class="lead">
-                  A prototype of a web based plataform for analysis of robot arms. Project of my published paper.
-                </p>
-                <p>
-                  "This paper describes the creation of a system for creating web-based digital twins. The system has a 3D visual simulator, and this simulator runs directly in the browser. Supports panel data visualization and augmented reality. To validate the system, a robotic physical arm was built with LEGO. In this arm were placed sensors connected to a microcontroller. The microcontroller sends the data to a database on the web. Your digital counterpart was created in our simulator. The article presents the results of this simulation."
-                </p>
-                <a href="https://github.com/Carnaux/WebPlatformForRobotics">https://github.com/Carnaux/WebPlatformForRobotics</a>
-              </div>
-            </section>
-          
-
-          <!-- Image Section - set the background image for the header in the line below -->
-          <section
-          class="py-5 bg-image-full"
-          style="background-image: url(imgs/hafffe.png);  height: 400px;"
-        >
-          <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-          <div style="height: 200px;"></div>
-        </section>
-
-        <!-- Content section -->
-        <section class="py-5">
-          <div class="container">
-            <h1>Raffe's Hackathon</h1>
-            <p class="lead">
-              A complete industry 4.0 system made for the brewery Raffe Hackathon
-            </p>
-            <p>
-              Raffe is a craft beer brewery from Natal, RN, Brazil, and they, with Instituto Metropole Digital, organized a hackathon to approximate the industry to the labs.
-            </p>
-            <a href="https://carnaux.github.io/Hackathon-Raffe/">https://carnaux.github.io/Hackathon-Raffe/</a>
-          </div>
-        </section>
-        </div>
-
-        <!-- Image Section - set the background image for the header in the line below -->
-        <section
+      <!-- Header - set the background image for the header in the line below -->
+      <header
         class="py-5 bg-image-full"
-        style="background-image: url(imgs/bim.png);  height: 400px;"
-        >
+        style="background-image: url(imgs/aero.png); height: 400px;"
+      ></header>
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>Web Aerodynamics</h1>
+          <p class="lead">Easy to use aerodynamics in your browser!</p>
+          <a href="https://carnaux.github.io/Web-Aerodynamics/"
+            >https://carnaux.github.io/Web-Aerodynamics/</a
+          >
+        </div>
+      </section>
+
+      <!---------------------------------------------------------------------------------------------->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/virtusurg.png);  height: 400px;"
+      >
         <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
         <div style="height: 200px;"></div>
-        </section>
-
-        <!-- Content section -->
-        <section class="py-5">
+      </section>
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>VirtuSurg</h1>
+          <p class="lead">
+            Laparoscopic surgery simulator using Three.js and the LeapMotion.
+          </p>
+          <a href="https://github.com/Carnaux/VirtuSurg-Three.js"
+            >https://github.com/Carnaux/VirtuSurg-Three.js</a
+          >
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------------------------->
+      <!-- Image Section - set the background image for the header in the line below -->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/robotics.png);  height: 400px;"
+      >
+        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+        <div style="height: 200px;"></div>
+      </section>
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>Web Platform For Robotics</h1>
+          <p class="lead">
+            A prototype of a web based plataform for analysis of robot arms.
+            Project of my published paper.
+          </p>
+          <p>
+            "This paper describes the creation of a system for creating
+            web-based digital twins. The system has a 3D visual simulator, and
+            this simulator runs directly in the browser. Supports panel data
+            visualization and augmented reality. To validate the system, a
+            robotic physical arm was built with LEGO. In this arm were placed
+            sensors connected to a microcontroller. The microcontroller sends
+            the data to a database on the web. Your digital counterpart was
+            created in our simulator. The article presents the results of this
+            simulation."
+          </p>
+          <a href="https://github.com/Carnaux/WebPlatformForRobotics"
+            >https://github.com/Carnaux/WebPlatformForRobotics</a
+          >
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------------------------->
+      <!-- Image Section - set the background image for the header in the line below -->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/hafffe.png);  height: 400px;"
+      >
+        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+        <div style="height: 200px;"></div>
+      </section>
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>Raffe's Hackathon</h1>
+          <p class="lead">
+            A complete industry 4.0 system made for the brewery Raffe Hackathon
+          </p>
+          <p>
+            Raffe is a craft beer brewery from Natal, RN, Brazil, and they, with
+            Instituto Metropole Digital, organized a hackathon to approximate
+            the industry to the labs.
+          </p>
+          <a href="https://carnaux.github.io/Hackathon-Raffe/"
+            >https://carnaux.github.io/Hackathon-Raffe/</a
+          >
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------------------------->
+      <!-- Image Section - set the background image for the header in the line below -->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/bim.png);  height: 400px;"
+      >
+        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+        <div style="height: 200px;"></div>
+      </section>
+      <!-- Content section -->
+      <section class="py-5">
         <div class="container">
           <h1>Web AR BIM Visualization</h1>
           <p class="lead">
             A visualization of a BIM using Web Augmented Reality . (PROTOTYPE)
           </p>
-          <a href="https://github.com/Carnaux/Web-AR-BIM-Visualization">https://github.com/Carnaux/Web-AR-BIM-Visualization</a>
-        </div>
-        </section>
-        </div>
-
-              <!-- Image Section - set the background image for the header in the line below -->
-              <section
-                class="py-5 bg-image-full"
-                style="background-image: url(imgs/casa.png);  height: 400px;"
-              >
-                <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-                <div style="height: 200px;"></div>
-              </section>
-
-              <!-- Content section -->
-              <section class="py-5">
-                <div class="container">
-                  <h1>Renovable Energy House</h1>
-                  <p class="lead">
-                    A simulation of a solar powered house. This was a project for the class of Enviroment and Urban Development. It allow you to take control of the Sun and other conditions to see how much energy the house can generate.
-                  </p>
-                  <a href="https://github.com/Carnaux/RenovableEnergyHouse-Three.js">https://github.com/Carnaux/RenovableEnergyHouse-Three.js</a>
-                </div>
-              </section>
-            </div>
-
-            <!-- Image Section - set the background image for the header in the line below -->
-            <section
-            class="py-5 bg-image-full"
-            style="background-image: url(imgs/cat.png);  height: 400px;"
+          <a href="https://github.com/Carnaux/Web-AR-BIM-Visualization"
+            >https://github.com/Carnaux/Web-AR-BIM-Visualization</a
           >
-            <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-            <div style="height: 200px;"></div>
-          </section>
-
-          <!-- Content section -->
-          <section class="py-5">
-            <div class="container">
-              <h1>Cats</h1>
-              <p class="lead">
-                An app to help the animal protectors at UFRN's university residence, to organize the supplies and status of kittens
-              </p>
-              <a href="https://github.com/Carnaux/Cats">https://github.com/Carnaux/Cats</a>
-            </div>
-          </section>
         </div>
-</div>
+      </section>
+      <!---------------------------------------------------------------------------------------------->
+      <!-- Image Section - set the background image for the header in the line below -->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/casa.png);  height: 400px;"
+      >
+        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+        <div style="height: 200px;"></div>
+      </section>
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>Renovable Energy House</h1>
+          <p class="lead">
+            A simulation of a solar powered house. This was a project for the
+            class of Enviroment and Urban Development. It allow you to take
+            control of the Sun and other conditions to see how much energy the
+            house can generate.
+          </p>
+          <a href="https://github.com/Carnaux/RenovableEnergyHouse-Three.js"
+            >https://github.com/Carnaux/RenovableEnergyHouse-Three.js</a
+          >
+        </div>
+      </section>
+      <!---------------------------------------------------------------------------------------------->
 
+      <!-- Image Section - set the background image for the header in the line below -->
+      <section
+        class="py-5 bg-image-full"
+        style="background-image: url(imgs/cat.png);  height: 400px;"
+      >
+        <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+        <div style="height: 200px;"></div>
+      </section>
+
+      <!-- Content section -->
+      <section class="py-5">
+        <div class="container">
+          <h1>Cats</h1>
+          <p class="lead">
+            An app to help the animal protectors at UFRN's university residence,
+            to organize the supplies and status of kittens
+          </p>
+          <a href="https://github.com/Carnaux/Cats"
+            >https://github.com/Carnaux/Cats</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <div id="about" class="container text-center" style="display:none">
+      <img
+        class="img-fluid  "
+        style="width: 300px; height: 350px; margin-top: 40px;"
+        src="imgs/eu.jpg"
+        alt=""
+      />
+
+      <h4 style="margin-top:60px; " class="text-center">
+        Daniel Fernandes Gonçalves de Oliveira
+      </h4>
+
+      <h5 style="margin-top:60px; " class="text-center">
+        Science and Technology - UFRN (on progress)
+      </h5>
+
+      <h3 style="margin-top:60px; " class=" text-center">Publication</h3>
+
+      <h5 style="margin-top:30px; " class=" text-center">
+        OLIVEIRA, D. F. G. ; DANTAS, R. R. . Development of a platform for
+        Digital Twin web-based robotic arm analysis. In: EPOCA 2018 - XI Escola
+        Potiguar de Computação e suas Aplicações, 2018, Angicos. Anais da Escola
+        Potiguar de Computação e suas Aplicações, 2018.
+      </h5>
+    </div>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container text-center">
-          <p class="m-0 text-center text-white">More about and more projects at:</p>
-          <a href="https://github.com/Carnaux" class="fab fa-github  text-center text-white" style="font-size: 80px;"></a>
+        <p class="m-0 text-center text-white">
+          More about and more projects at:
+        </p>
+        <a
+          href="https://github.com/Carnaux"
+          class="fab fa-github  text-center text-white"
+          style="font-size: 80px;"
+        ></a>
         <p class="m-0 text-center text-white">
           Copyright &copy; Daniel Fernandes 2018
         </p>
@@ -216,5 +270,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="j1.js"></script>
   </body>
 </html>
