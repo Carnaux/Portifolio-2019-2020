@@ -42,11 +42,6 @@ var torus = new THREE.Mesh( geometry, material );
 torus.material.wireframe = true;
 meshes.push( torus );
 
-var geometry = new THREE.TorusKnotGeometry( 3, 1, 100, 16 );
-var material = new THREE.MeshBasicMaterial( { color: new THREE.Color("rgb(50,120,50)"), side: THREE.DoubleSide } );
-var torusKnot = new THREE.Mesh( geometry, material );
-torusKnot.material.wireframe = true;
-meshes.push(torusKnot);
 
 camera.position.z = 5;
 window.addEventListener( 'resize', onWindowResize, false );
@@ -105,11 +100,11 @@ function onDocumentTouchEnd( e ) {
     mouse.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
     
-    
     raycaster.setFromCamera(mouse, camera);
     var intersects = raycaster.intersectObject( object );
-    
-    if(intersects.length > 0){
+    if(e.target.name == "projects" || e.target.name == "about"){
+        e.target.click();
+    }else if(intersects.length > 0){
         
         if(state == meshes.length - 1){
             state = 0;
