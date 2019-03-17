@@ -1,0 +1,32 @@
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,black, black, transparent, transparent);
+}
+
+#presentation{
+    position: absolute;
+    top: 35%;
+    margin-left: 10px;
+}
+
+.borderStyle{
+    border: solid rgb(35,35,35);
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: lightgreen;
+  }

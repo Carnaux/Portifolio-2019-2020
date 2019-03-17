@@ -1,0 +1,28 @@
+body{
+    background-image: linear-gradient(to right,black, black,rgb(35,35,35), rgb(35,35,35));
+}
+.menu{
+    font-size: 20px;
+    color: green;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+@media (max-width: 320px) { 
+    .card{
+        margin-left: 0 !important;
+    }  
+}

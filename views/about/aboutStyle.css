@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(to right,black, black,rgb(35,35,35), rgb(35,35,35));
+}
+.menu{
+    font-size: 20px;
+    color: green;
+}
+.textStyle{
+    color: whitesmoke
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: green;
+  }
+
+  
