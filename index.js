@@ -14,13 +14,21 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 let renderDiv = document.getElementById("renderDiv");
 renderDiv.appendChild( renderer.domElement );
 
+
+var geometry = new THREE.TorusKnotGeometry( 3, 1, 100, 16 );
+var material = new THREE.MeshBasicMaterial( { color: new THREE.Color("rgb(50,120,50)"), side: THREE.DoubleSide } );
+var torusKnot = new THREE.Mesh( geometry, material );
+torusKnot.material.wireframe = true;
+meshes.push(torusKnot);
+object = torusKnot;
+scene.add( object );
+
 var geometry = new THREE.BoxGeometry( 3, 3, 3 );
 var material = new THREE.MeshBasicMaterial( { color: new THREE.Color("rgb(50,120,50)"), side: THREE.DoubleSide } );
 var cube = new THREE.Mesh( geometry, material );
 cube.material.wireframe = true;
 meshes.push(cube);
-object = cube;
-scene.add( object );
+
 
 var geometry = new THREE.SphereGeometry( 3, 32, 32 );
 var material = new THREE.MeshBasicMaterial( {color: new THREE.Color("rgb(50,120,50)"), side: THREE.DoubleSide} );
@@ -43,6 +51,7 @@ meshes.push(torusKnot);
 camera.position.z = 5;
 window.addEventListener( 'resize', onWindowResize, false );
 window.addEventListener( 'mousedown', onDocumentMouseDown, false );
+document.addEventListener('touchend', onDocumentTouchEnd, false);
 
 function onWindowResize(){
 
@@ -69,6 +78,32 @@ function onDocumentMouseDown( e ) {
 
     mouse.x = (e.clientX / renderer.domElement.clientWidth) * 2 - 1;
     mouse.y = -(e.clientY / renderer.domElement.clientHeight) * 2 + 1;
+    
+    
+    raycaster.setFromCamera(mouse, camera);
+    var intersects = raycaster.intersectObject( object );
+    
+    if(intersects.length > 0){
+        
+        if(state == meshes.length - 1){
+            state = 0;
+        }else{
+            state++;
+        }
+        
+        scene.remove(object);
+        object = meshes[state];
+        scene.add(object);
+    }
+    
+}
+
+function onDocumentTouchEnd( e ) {
+    e.preventDefault();
+    var mouse = new THREE.Vector3();
+
+    mouse.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
     
     
     raycaster.setFromCamera(mouse, camera);
