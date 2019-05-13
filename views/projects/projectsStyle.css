@@ -21,6 +21,10 @@ a:hover {
     color: green;
 }
 
+#none{
+    height: 200px;
+}
+
 @media (max-width: 320px) { 
     .card{
         margin-left: 0 !important;
